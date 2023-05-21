@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Контакты - Delicious Delights</title>
+	<style>
+		body {
+			font-family: Corbel, Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		.contact-info {
+			margin-top: 30px;
+			padding:20px;
+			border-radius: 5px;
+			border: black solid 1px;
+		}
+
+		.contact-info p {
+			margin-bottom: 10px;
+			color: #555;
+		}
+
+		.contact-info strong {
+			color: #333;
+		}
+        button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #555;
+		}
+
+		.return-button {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background-color: #555;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+        footer {
+	        background-color: #666;
+	        color: #fff;
+	        padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+  
+        .footer-content {
+	        max-width: 960px;
+	        margin: 0 auto;
+	        text-align: center;
+        }
+		body > *:not(header) {
+	opacity: 0;
+  }
+	</style>
+    <script>
+        function goToIndex(){
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+	<div class="container">
+        <button class="return-button" onclick="goToIndex()">Вернуться</button>
+		<h1>Контакты</h1>
+		<div class="contact-info">
+			<p><strong>Адрес:</strong> ул. Центральная, 123, г. Воронеж</p>
+			<p><strong>Телефон:</strong> +7 (123) 456-7890</p>
+			<p><strong>Email:</strong> info@deliciousdelights.com</p>
+			<p><strong>Режим работы:</strong> Понедельник - Воскресенье: 10:00 - 22:00</p>
+            <p><strong>Сайт сделал:</strong> Хицко К.В.</p>
+		</div>
+	</div>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2023 Delicious Delights. Все права защищены.</p>
+          <p>Адрес: ул. Центральная, 123, г. Воронеж</p>
+          <p>Телефон: +7 (123) 456-7890</p>
+        </div>
+    </footer>
+<script src="js/opacity.js"></script>
+</body>
+</html>

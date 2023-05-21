@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Оставить отзыв</title>
+	<style>
+		body {
+			font-family: Corbel, Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			position: relative;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		.form-container {
+			background-color: #fff;
+			border-radius: 5px;
+			padding: 20px;
+			margin-top: 30px;
+			border: black solid 1px;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: #666;
+		}
+
+		input[type="text"],
+		textarea {
+			width: 97%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #555;
+		}
+
+		.return-button {
+			position: absolute;
+			left: 20px;
+			top:20px;
+			background-color: #555;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+        footer {
+	        background-color: #666;
+	        color: #fff;
+	        padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+  
+        .footer-content {
+	        max-width: 960px;
+	        margin: 0 auto;
+	        text-align: center;
+        }
+		body > *:not(header) {
+	opacity: 0;
+  }
+	</style>
+	<script>
+		function goToIndex() {
+			window.location.href = "index.html";
+		}
+	</script>
+</head>
+<body>
+	<button class="return-button" onclick="goToIndex()">Вернуться</button>
+	<div class="container">
+		<h1>Оставить отзыв</h1>
+		<div class="form-container">
+			<form>
+				<div class="form-group">
+					<label for="name">Имя:</label>
+					<input type="text" id="name" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="text" id="email" required>
+				</div>
+				<div class="form-group">
+					<label for="message">Отзыв:</label>
+					<textarea id="message" required></textarea>
+				</div>
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2023 Delicious Delights. Все права защищены.</p>
+          <p>Адрес: ул. Центральная, 123, г. Воронеж</p>
+          <p>Телефон: +7 (123) 456-7890</p>
+        </div>
+    </footer>
+<script src="js/opacity.js"></script>
+</body>
+</html>

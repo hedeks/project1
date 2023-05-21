@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню ресторана - Delicious Delights</title>
+    <style>
+        body {
+            font-family: Corbel, Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+        }
+        section {
+        margin:0 40px;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        section > div {
+        flex-basis: calc(33.33% - 10px);
+        margin-bottom: 20px;
+        }
+
+        section > div img {
+        width: 100%;
+        height: auto;
+        }
+        .container {
+            display: block;
+            margin: 80px 0;
+            padding: 20px;
+            background-color: white;
+            border:1px solid black;
+        }
+        .sec1 .sec2 .sec3 .sec4 {
+            display: inline;
+            margin: 30px;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        .menu1 .menu2 .menu3 .menu4 .menu5 .menu6 .menu7 .menu8 .menu9 .menu10 .menu11 .menu12{
+            display: inline;
+            width: 100%;
+            margin: 30px;
+        }
+        .menu1 img,
+        .menu2 img,
+        .menu3 img,
+        .menu4 img,
+        .menu5 img,
+        .menu6 img,
+        .menu7 img,
+        .menu8 img,
+        .menu9 img,
+        .menu10 img,
+        .menu11 img,
+        .menu12 img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        
+		h1 {
+			text-align: center;
+			color: #333;
+            font-size: 35;
+            font-size: 50px;
+	        margin: 30px;
+	        padding: 0;
+	        z-index: 1;
+		}
+        .description{  
+        margin: 0 50px;
+	    font-size: 20px;
+	    text-align: justify;
+        }
+        button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #555;
+		}
+
+		.return-button {
+			position: absolute;
+			left: 20px;
+			top: 20px;
+			background-color: #555;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+        footer {
+	        background-color: #666;
+	        color: #fff;
+	        padding: 20px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 60px;
+        }
+  
+        .footer-content {
+	        max-width: 960px;
+	        margin: 0 auto;
+	        text-align: center;
+        }
+		body > *:not(header) {
+	opacity: 0;
+  }
+    </style>
+</head>
+<body>
+<button class="return-button" onclick="goToIndex()">Вернуться</button>
+<script src="js/opacity.js"></script>
+<script>
+    function goToIndex(){
+        window.location.href = "index.html";
+    }
+</script>
+<div class="Menu-label">
+    <h1>Меню</h1>
+</div>
+<div class="container">
+<div class="description">
+    <p> Мы имеем огромный выбор в нашем меню! Независимо от ваших предпочтений и вкусов, у нас найдется блюдо, которое вас порадует.
+
+        <br> <br> Наше меню предлагает широкий ассортимент разнообразных блюд, чтобы удовлетворить даже самые изысканные вкусы. Мы бережно отбираем ингредиенты высочайшего качества и используем их для приготовления блюд с любовью и творческим подходом.</p>
+</div>
+</div> 
+    <section class="sec1">
+        <div class="menu1 menu-image">
+            <p>Обеды</p>
+            <img src="img/menu1.jpg">
+        </div>   
+        <div class="menu2 menu-image">
+            <p>Закуски</p>
+            <img src="img/menu2.jpg">
+        </div> 
+        <div class="menu3 menu-image">
+            <p>Весеннее меню</p>
+            <img src="img/menu3.jpg">
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="menu4 menu-image">
+            <p>Горячие блюда</p>
+            <img src="img/menu4.jpg">
+        </div>
+        <div class="menu5 menu-image">
+            <p>Салаты</p>
+            <img src="img/menu5.jpg">
+        </div>
+        <div class="menu6 menu-image">
+            <p>Гриль меню</p>
+            <img src="img/menu6.jpg">
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="menu7 menu-image">
+            <p>Блюда на компанию</p>
+            <img src="img/menu7.jpg">
+        </div>
+        <div class="menu8 menu-image">
+            <p>Супы</p>
+            <img src="img/menu8.jpg">
+        </div>
+        <div class="menu9 menu-image">
+            <p>Гарниры</p>
+            <img src="img/menu9.jpg">
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="menu10 menu-image">
+            <p>Десерты</p>
+            <img src="img/menu10.jpg">
+        </div>
+        <div class="menu11 menu-image" >
+            <p>Соусы и хлеб</p>
+            <img src="img/menu11.jpg">
+        </div>
+        <div class="menu12 menu-image">
+            <p>Напитки</p>
+            <img src="img/menu12.jpg">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2023 Delicious Delights. Все права защищены.</p>
+          <p>Адрес: ул. Центральная, 123, г. Воронеж</p>
+          <p>Телефон: +7 (123) 456-7890</p>
+        </div>
+    </footer>
+    <script>
+        var menuImages = document.getElementsByClassName("menu-image");
+    
+        // Перебираем каждое изображение и добавляем обработчики событий
+        for (var i = 0; i < menuImages.length; i++) {
+          var image = menuImages[i];
+    
+          image.addEventListener("mouseover", function() {
+            this.style.transform = "scale(1.05)";
+          });
+    
+          image.addEventListener("mouseout", function() {
+            this.style.transform = "scale(1)";
+          });
+        }
+      </script>
+</body>
+</html>

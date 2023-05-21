@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Акции</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      font-family: Corbel, Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: #fff;
+		border-radius: 5px;
+    }
+
+    .promotion {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      border: black solid 1px;
+    }
+
+    .promotion img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .promotion h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .promotion p {
+      font-size: 18px;
+      color: #666666;
+    }
+    button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #555;
+		}
+
+		.return-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+			background-color: #555;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+        h1 {
+			text-align: center;
+			color: #333;
+		}
+        body > *:not(header) {
+	opacity: 0;
+  }
+  footer {
+	        background-color: #666;
+	        color: #fff;
+	        padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+  
+        .footer-content {
+	        max-width: 960px;
+	        margin: 0 auto;
+	        text-align: center;
+        }
+  </style>
+</head>
+<body>
+    <button class="return-button" onclick="goToIndex()">Вернуться</button>
+    <div class="container">
+        <h1>Акции</h1>
+        <div class="promotion">
+        <img src="img/student.jpg" alt="Студентам">
+        <h2>Студентам скидка 9%</h2>
+        <p>Получите скидку 9% на все наши услуги, предъявив студенческий билет.</p>
+        </div>
+    </div>
+    <script>
+    function goToIndex(){
+        window.location.href = "index.html";
+    }
+</script>
+<script src="js/opacity.js"></script>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2023 Delicious Delights. Все права защищены.</p>
+    <p>Адрес: ул. Центральная, 123, г. Воронеж</p>
+    <p>Телефон: +7 (123) 456-7890</p>
+    <p>Сайт сделал: Хицко К.В.</p>
+  </div>
+</footer>
+</body>
+</html>
